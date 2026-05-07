@@ -8,12 +8,21 @@
 
 🎉 Our paper *Mitigating Label Shift in Tabular In-Context Learning via Test-Time Posterior Adjustment* has been accepted to **ICML 2026**.
 
+<br>
+
+<p align="center">
+  <img src="distpfn.png" width="100%">
+</p>
+
 The proposed DistPFN mitigates label shift in TabPFN-based models by performing test-time posterior adjustment that **rebalances the influence of training priors and predicted posteriors** without additional training.
 
 <br>
 
-## DistPFN & DistPFN-T 
-**Plug-in** methods for any **tabular foundation models based on in-context learning**
+---
+
+## How to use?
+
+**DistPFN & DistPFN-T** : **Plug-in** methods for any **tabular foundation models based on in-context learning**
 ```python
 classifier.fit(X_train, y_train)
 y_prob = classifier.predict_proba(X_test)
@@ -39,7 +48,7 @@ y_pred_cls = y_prob.argmax(axis=1)
 <br>
 
 
-## Step 1) Installation
+### Step 1) Installation
 ```bash
 conda create --name tabpfn python=3.9
 conda activate tabpfn
@@ -51,20 +60,21 @@ pip install -r requirements.txt
 
 <br>
 
-## Step 2) Generating datasets
+### Step 2) Generating datasets
 
 ```shell
 python3 -m src.evals.datasets
 ```
 <br>
 
-## Step 3) Evaluation
+### Step 3) Evaluation
 
 ```shell
 python -m src.evals.eval_TABPFN_shift_O # w/ label shift
 python -m src.evals.eval_TABPFN_shift_X # w/o label shift
 ```
 
+--- 
 
 ## Citation
 
