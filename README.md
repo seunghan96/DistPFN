@@ -1,7 +1,14 @@
 # Mitigating Label Shift in Tabular In-Context Learning via Test-Time Posterior Adjustment
 
-- Backbone: **TabPFN-v2** ([[Accurate predictions on small data with a tabular foundation model](https://www.nature.com/articles/s41586-024-08328-6)]) 
-- Dataset: 253 OpenML datasets.
+
+<p align="center">
+  <a href="https://arxiv.org/pdf/2605.04363"><img src="https://img.shields.io/badge/arXiv-2605.04363-b31b1b.svg" alt="arXiv"></a>
+  <a href="https://opensource.org/licenses/Apache-2.0"><img src="https://img.shields.io/badge/License-Apache%202.0-green.svg" alt="License"></a>
+</p>
+
+🎉 Our paper *Mitigating Label Shift in Tabular In-Context Learning via Test-Time Posterior Adjustment* has been accepted to **ICML 2026**.
+
+The proposed DistPFN mitigates label shift in TabPFN-based models by performing test-time posterior adjustment that **rebalances the influence of training priors and predicted posteriors** without additional training.
 
 <br>
 
@@ -57,3 +64,32 @@ python3 -m src.evals.datasets
 python -m src.evals.eval_TABPFN_shift_O # w/ label shift
 python -m src.evals.eval_TABPFN_shift_X # w/o label shift
 ```
+
+
+## Citation
+
+If you find this work useful, please cite:
+
+```bibtex
+@article{lee2026distpfn,
+  title={Mitigating Label Shift in Tabular In-Context Learning via Test-Time Posterior Adjustment},
+  author={Seungahn Lee},
+  journal={ICML},
+  year={2026}
+}
+```
+
+
+## Acknowledgements
+
+We thank the respective authors for releasing their official codebases:
+- [TabPFN](https://github.com/PriorLabs/TabPFN),
+- [TabICL](https://github.com/soda-inria/tabicl), and
+- [AutoML](https://github.com/automl).  [oai_citation:0‡GitHub](https://github.com/PriorLabs/TabPFN?utm_source=chatgpt.com)
+
+## Contact
+
+Seunghan Lee — seunghan.lee@lgresearch.ai
+
+
+
