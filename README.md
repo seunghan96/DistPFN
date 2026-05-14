@@ -81,10 +81,10 @@ python -m src.evals.eval_TABPFN_shift_X # w/o label shift
 If you find this work useful, please cite:
 
 ```bibtex
-@article{lee2026distpfn,
+@article{lee2026mitigating,
   title={Mitigating Label Shift in Tabular In-Context Learning via Test-Time Posterior Adjustment},
-  author={Seungahn Lee},
-  journal={ICML},
+  author={Lee, Seunghan and Lee, Jaehoon and Seo, Jun and Yoo, Sungdong and Kim, Minjae and Lim, Tae Yoon and Kang, Dongwan and Choi, Hwanil and Lee, SoonYoung and Ahn, Wonbin},
+  journal={arXiv preprint arXiv:2605.04363},
   year={2026}
 }
 ```
